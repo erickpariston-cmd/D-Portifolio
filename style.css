@@ -95,19 +95,20 @@ nav ul li a {
 }
 
 .foto {
-  height: 250px;         /* altura fixa do contêiner da imagem */
+  height: 250px;
   border-radius: 10px;
-  overflow: hidden;      /* esconde o que extrapola o contêiner */
-  background: #ddd;      /* cor de fundo caso carregue antes da imagem */
+  overflow: hidden;
+  background: #ddd;
 }
 
 .foto img {
   width: 100%;
   height: 100%;
-  object-fit: cover;     /* ajusta a imagem ao contêiner proporcionalmente, pode cortar parte dela */
-  object-position: center; /* centra a imagem dentro do contêiner */
-  display: block;        /* evita espaços em branco indesejados */
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
+
 
 
 
