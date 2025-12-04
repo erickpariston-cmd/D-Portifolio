@@ -75,7 +75,7 @@ nav ul li a {
     opacity: .9;
 }
 
-/* PORTFÓLIO */ 
+/* PORTFÓLIO */
 .portfolio {
     padding: 50px;
     text-align: center;
@@ -87,36 +87,21 @@ nav ul li a {
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  max-width: 1200px;     /* largura máxima da galeria */
-  margin: 0 auto;        /* centraliza a galeria na página */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .foto {
-  height: 250px;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #ddd;
+    height: 250px;
+    background: #ddd;
+    border-radius: 10px;
 }
-
-.foto img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
-
-
-
 
 .info {
     margin-top: 15px;
     color: #444;
 }
-
 
 /* SOBRE */
 .sobre {
