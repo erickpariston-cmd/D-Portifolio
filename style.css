@@ -1,86 +1,69 @@
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
-  background: #fafafa;
-  color: #2e2e2e;
-  line-height: 1.6;
+  background: #f5f2ee; 
+  font-family: "Georgia", serif;
+  color: #2d2d2d;
 }
 
-.hero {
-  padding: 100px 20px;
-  text-align: center;
-  background: #ffffff;
-  border-bottom: 1px solid #eaeaea;
+.cover {
+  padding: 120px 30px;
+  background: #f7f4ef;
+  border-bottom: 1px solid #e5e2dd;
+  position: relative;
+  text-align: left;
 }
 
-.hero h1 {
-  font-size: 42px;
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 48px;
+  letter-spacing: 2px;
   font-weight: 300;
   margin: 0;
+}
+
+.subtitle {
+  position: absolute;
+  bottom: 40px;
+  left: 120px;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 
-.hero p {
-  font-size: 16px;
-  margin-top: 10px;
-  color: #555;
-}
-
-section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-h2 {
-  font-weight: 300;
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-.intro p {
-  max-width: 700px;
-  margin: auto;
+.story {
   text-align: center;
-  color: #555;
+  margin: 80px auto;
+  max-width: 600px;
 }
 
-.galeria .grid {
-  margin-top: 30px;
+.story h2 {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.story p {
+  font-size: 16px;
+  color: #666;
+}
+
+.grid {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 40px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.galeria img {
+.card img {
   width: 100%;
   border-radius: 4px;
   object-fit: cover;
 }
 
-.contato {
-  text-align: center;
+.narrow img {
+  height: 350px;
 }
 
-.botao {
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: 3px;
-  text-decoration: none;
-  background: #000;
-  color: #fff;
-  margin-top: 20px;
-  transition: 0.2s;
-}
-
-.botao:hover {
-  opacity: 0.8;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #f4f4f4;
-  color: #777;
-  font-size: 14px;
+.tall img {
+  height: 500px;
 }
