@@ -76,11 +76,3 @@ h2 {
 .botao:hover {
   opacity: 0.8;
 }
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #f4f4f4;
-  color: #777;
-  font-size: 14px;
-}
