@@ -87,27 +87,28 @@ nav ul li a {
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    max-width: 1200px; /* limita a largura total da grid */
-    margin: 0 auto; /* centraliza */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;     /* largura máxima da galeria */
+  margin: 0 auto;        /* centraliza a galeria na página */
 }
 
 .foto {
-    height: 250px;
-    border-radius: 10px;
-    overflow: hidden; /* para esconder excesso da imagem */
-    background: #ddd;
+  height: 250px;         /* altura fixa do contêiner da imagem */
+  border-radius: 10px;
+  overflow: hidden;      /* esconde o que extrapola o contêiner */
+  background: #ddd;      /* cor de fundo caso carregue antes da imagem */
 }
 
 .foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* preenche sem distorcer */
-    border-radius: 10px;
-    display: block; /* remove espaço extra embaixo */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* ajusta a imagem ao contêiner proporcionalmente, pode cortar parte dela */
+  object-position: center; /* centra a imagem dentro do contêiner */
+  display: block;        /* evita espaços em branco indesejados */
 }
+
 
 
 .info {
