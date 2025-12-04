@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meu Portfólio</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #111;
-      color: #fff;
-      text-align: center;
-      padding-top: 60px;
-    }
-    header {
-      background: #222;
-      padding: 20px;
-      font-size: 24px;
-      font-weight: bold;
-      position: fixed;
-      top: 0;
-      width: 100%;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    .card {
-      background: #1e1e1e;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 10px;
-      text-align: left;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Firmino Photography</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>Meu Portfólio</header>
+    <header>
+        <nav>
+            <h1 class="logo">Erick Firmino</h1>
+            <ul>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
 
-  <div class="container">
-    <h1>Bem-vindo ao meu portfólio!</h1>
-    <p>Se você está vendo isso, o GitHub Pages finalmente funcionou 🎉</p>
+        <div class="hero">
+            <h2>Fotografia que captura essência, emoção e verdade.</h2>
+            <p>Casais, famílias e histórias reais — do jeitinho que elas são.</p>
+        </div>
+    </header>
 
-    <div class="card">
-      <h2>Projetos</h2>
-      <p>Aqui vão ficar meus projetos futuramente.</p>
-    </div>
+    <section id="portfolio" class="portfolio">
+        <h2>Portfólio</h2>
 
-    <div class="card">
-      <h2>Sobre mim</h2>
-      <p>Texto de exemplo sobre mim. Vou editar depois.</p>
-    </div>
-  </div>
+        <div class="grid">
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
+        </div>
+
+        <p class="info">Em breve suas fotos reais entram aqui.</p>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre mim</h2>
+        <p>
+            Meu trabalho é sobre pessoas e sentimentos.  
+            Acredito que cada registro precisa ser leve, natural e verdadeiro —  
+            deixando que os momentos aconteçam, sem pressão, só fluindo.  
+            De casamentos a ensaios íntimos e familiares, minha missão é contar histórias que importam.
+        </p>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <p>Quer conversar sobre seu ensaio ou casamento?</p>
+        <p>Email: <strong>seuemail@exemplo.com</strong></p>
+        <p>Instagram: <strong>@seuuser</strong></p>
+    </section>
+
+    <footer>
+        <p>© 2025 - Erick Firmino Photography</p>
+    </footer>
 </body>
 </html>
