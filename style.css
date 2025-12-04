@@ -1,39 +1,86 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f6f6f6;
-  color: #333;
+  font-family: "Arial", sans-serif;
+  background: #fafafa;
+  color: #2e2e2e;
+  line-height: 1.6;
 }
 
 .hero {
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center;
-  background: #000;
-  color: #fff;
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaea;
 }
 
-.sobre, .galeria, .contato {
-  padding: 40px 20px;
+.hero h1 {
+  font-size: 42px;
+  font-weight: 300;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #555;
+}
+
+section {
+  padding: 60px 20px;
   max-width: 900px;
   margin: auto;
 }
 
+h2 {
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.intro p {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  color: #555;
+}
+
 .galeria .grid {
+  margin-top: 30px;
   display: grid;
-  gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .galeria img {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.contato {
+  text-align: center;
 }
 
 .botao {
   display: inline-block;
-  padding: 12px 20px;
-  border-radius: 4px;
+  padding: 12px 28px;
+  border-radius: 3px;
+  text-decoration: none;
   background: #000;
   color: #fff;
-  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.botao:hover {
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f4f4f4;
+  color: #777;
+  font-size: 14px;
 }
