@@ -1,69 +1,45 @@
 body {
-  margin: 0;
-  background: #f5f2ee; 
-  font-family: "Georgia", serif;
-  color: #2d2d2d;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
 }
 
-.cover {
-  padding: 120px 30px;
-  background: #f7f4ef;
-  border-bottom: 1px solid #e5e2dd;
-  position: relative;
-  text-align: left;
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #222;
 }
 
-.vertical {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  font-size: 48px;
-  letter-spacing: 2px;
-  font-weight: 300;
-  margin: 0;
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-.subtitle {
-  position: absolute;
-  bottom: 40px;
-  left: 120px;
-  font-size: 20px;
-  letter-spacing: 1px;
+.sobre, .galeria {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
-.story {
-  text-align: center;
-  margin: 80px auto;
-  max-width: 600px;
+.galeria .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-.story h2 {
-  font-size: 28px;
-  font-weight: 300;
-  margin-bottom: 10px;
+.foto {
+    background: #333;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
 }
 
-.story p {
-  font-size: 16px;
-  color: #666;
-}
-
-.grid {
-  display: grid;
-  gap: 25px;
-  padding: 40px 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.card img {
-  width: 100%;
-  border-radius: 4px;
-  object-fit: cover;
-}
-
-.narrow img {
-  height: 350px;
-}
-
-.tall img {
-  height: 500px;
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    margin-top: 40px;
+    font-size: 0.9rem;
 }
