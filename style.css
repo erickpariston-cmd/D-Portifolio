@@ -1,4 +1,4 @@
-/* Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -30,102 +30,55 @@ body {
 }
 
 /* SOBRE */
+.sobre {
+    padding: 60px 20px;
+}
+
+.sobre h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
 .sobre-container {
     max-width: 1100px;
-    margin: 60px auto;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding: 0 20px;
+    flex-wrap: wrap;
 }
 
-.sobre-container img {
+.foto-perfil {
     width: 260px;
     height: 260px;
     object-fit: cover;
     border-radius: 12px;
 }
 
-.sobre-text {
+/* TEXTO SOBRE */
+.sobre-container p {
     max-width: 550px;
     line-height: 1.7;
     font-size: 17px;
     color: #444;
 }
 
-.sobre h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-/* BOTOES */
-.btn-container {
-    margin-top: 25px;
-    display: flex;
-    gap: 15px;
-}
-
-.btn {
-    text-decoration: none;
-    padding: 10px 26px;
-    border-radius: 30px;
-    font-size: 15px;
-    border: 1px solid #444;
-    color: #444;
-    transition: 0.3s ease;
-}
-
-.btn:hover {
-    background: #444;
-    color: white;
-}
-
-/* PORTFOLIO */
-.portfolio-section {
-    padding: 60px 20px;
-}
-
-.portfolio-section h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 40px;
-}
-
-.portfolio-grid {
-    max-width: 1100px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-}
-
-.portfolio-grid img {
-    width: 100%;
-    height: 340px;  /* 🔥 controla o tamanho fixo elegante */
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* CONTATO */
-.contato {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.contato h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.contato p {
-    color: #444;
-    font-size: 17px;
-}
+/* BOTÕES SOBRE */
 .social-links {
-    margin-top: 25px;
+    margin-top: 35px;
     display: flex;
     justify-content: center;
     gap: 15px;
+}
+
+.btn-insta,
+.bt
+n-git {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
 }
