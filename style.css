@@ -1,131 +1,52 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Helvetica", sans-serif;
-}
-
 body {
-    background: #f8f8f8;
-    color: #222;
-    line-height: 1.6;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
 }
 
-/* HEADER */
-header {
-    height: 90vh;
-    background: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format') center/cover no-repeat;
-    position: relative;
-}
-
-header::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.45);
-}
-
-nav {
-    position: relative;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 50px;
-}
-
-nav .logo {
-    color: #fff;
-    font-size: 26px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-/* HERO */
-.hero {
-    z-index: 10;
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 50px;
-    color: #fff;
-}
-
-.hero h2 {
-    font-size: 40px;
-    max-width: 550px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-    opacity: .9;
-}
-
-/* PORTFÓLIO */
-.portfolio {
-    padding: 50px;
+.topo {
     text-align: center;
+    padding-bottom: 20px;
+    background: #000;
+    color: white;
 }
 
-.portfolio h2 {
-    font-size: 28px;
-    margin-bottom: 25px;
+/* Foto do topo ajustada */
+.foto-topo {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;  /* mantém dentro sem esticar */
+    display: block;
 }
 
-.grid {
+.sobre, .portfolio {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
 }
 
+/* Caixa onde a foto fica */
 .foto {
+    width: 100%;
     height: 250px;
-    background: #ddd;
-    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
-.info {
-    margin-top: 15px;
-    color: #444;
-}
-
-/* SOBRE */
-.sobre {
-    padding: 60px 50px;
-}
-
-.sobre h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-}
-
-/* CONTATO */
-.contato {
-    padding: 60px 50px;
-}
-
-.contato h2 {
-    margin-bottom: 15px;
-}
-
-/* FOOTER */
-footer {
-    background: #111;
-    color: #eee;
-    text-align: center;
-    padding: 15px 0;
+/* Imagens redimensionam certinho */
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* faz a foto preencher sem distorcer */
+    display: block;
 }
