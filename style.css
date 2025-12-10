@@ -77,17 +77,18 @@ body {
 .btn-whats {
     text-decoration: none;
     padding: 12px 25px;
-    border-radius: 8px;
-    border: 1px solid #333;
-    color: #333;
+    border-radius: 6px;
     font-weight: 500;
+    border: 1px solid #999;
+    color: #333;
     transition: 0.3s ease;
+    background: #f2f2f2;
 }
 
 .btn-insta:hover,
 .btn-whats:hover {
     background: #333;
-    color: #fff;
+    color: white;
 }
 
 /* PORTFÓLIO */
@@ -111,9 +112,14 @@ body {
 
 .portfolio-grid img {
     width: 100%;
-    height: 340px;
+    height: 360px;
     object-fit: cover;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-grid img:hover {
+    transform: scale(1.03);
 }
 
 /* CONTATO */
@@ -130,9 +136,4 @@ body {
 .contato p {
     color: #444;
     font-size: 17px;
-}
-.contato a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
 }
