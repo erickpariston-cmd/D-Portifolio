@@ -74,11 +74,65 @@ body {
 }
 
 .btn-insta,
-.bt
-n-git {
+.btn-whats {
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 8px;
+    border: 1px solid #333;
+    color: #333;
     font-weight: 500;
-    transition: background 0.3s, color 0.3s;
+    transition: 0.3s ease;
+}
+
+.btn-insta:hover,
+.btn-whats:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* PORTFÓLIO */
+.portfolio {
+    padding: 60px 20px;
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.portfolio-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-grid img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* CONTATO */
+.contato {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contato h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contato p {
+    color: #444;
+    font-size: 17px;
+}
+.contato a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
 }
