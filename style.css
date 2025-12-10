@@ -123,3 +123,9 @@ body {
     color: #444;
     font-size: 17px;
 }
+.social-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
